@@ -19,6 +19,8 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    background-image: Images/phone_globe.jpg;
+    color: white;
 }
 /* Styling the products display */
 body>div {
