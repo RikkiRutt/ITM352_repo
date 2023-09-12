@@ -1,4 +1,4 @@
-/* General/
+/* General */
 body {
     width: 800px;
     margin: 0 auto;
@@ -7,9 +7,21 @@ img {
     width: 200px;
     height: 200px;
 }
+/* Typography */
 h1 {
    text-align: center; 
 }
 h2 {
     text-align: center;
+}
+/* Block styling */
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+/* Styling the products display */
+body>div {
+    border: 5px solid black;
+    display: flex;
 }
