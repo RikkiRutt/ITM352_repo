@@ -1,14 +1,14 @@
 body {
     width: 800px;
-    margin: 0 auto;
+    margin: 0auto;
 }
 img {
     width: 200px;
     height: 200px;
 }
 h1 {
-   text-align: center; 
+   text-align:center; 
 }
 h2 {
-    text-align: center;
+    text-align:center;
 }
