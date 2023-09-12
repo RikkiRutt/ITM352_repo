@@ -2,7 +2,6 @@
 body {
     width: 800px;
     margin: 0 auto;
-    background-image: url("Images/phone_globe.jpg");
 }
 img {
     width: 200px;
@@ -23,6 +22,7 @@ main {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    background-image: url("Images/phone_globe.jpg");
     color: white;
 }
 /* Styling the products display */
