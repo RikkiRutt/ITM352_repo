@@ -3,10 +3,12 @@
     <link href="products-style.css" rel="stylesheet" type="text/css" />
     <script>
         const store_name="Rikki Rutt";
-        let hits= 2;
-        let spins= 2;
     </script>
     <title>Smartphone Products</title>
+    <p style="text-align: center; font-weight: bold;">
+        Hits:<span id="hits_span">0</span>
+        Spins:<span id="spins_span">0</span>
+        </p>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -52,6 +54,17 @@
     </section>
 </main>
 </div>
+    <script>
+    function changeClassName(element) {
+        element.className = 'item rotate';
+    }
+    function resetClassName(element) {
+        element.className = 'item';
+    }
+    let hits= 0;
+    let spins= 1;
+    hits_span.innerHTML = hits; 
+    spins_span.innerHTML = spins;
 </body>
 <footer>
     <script>
