@@ -16,7 +16,7 @@
             onchange="localStyle.innerHTML = '.rotate img {animation-duration: ' + speedSlider.value + 's;}';" style="direction: rtl;">
     <style id="localStyle"></style>
 </head>
-<body>
+<body onload="hits_span.innerHTML = hits; spins_span.innerHTML = spins;">
 
 
     <h1>
@@ -65,6 +65,7 @@
     let spins= 1;
     hits_span.innerHTML = hits; 
     spins_span.innerHTML = spins;
+    </script>
 </body>
 <footer>
     <script>
