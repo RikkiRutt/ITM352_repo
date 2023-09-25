@@ -73,9 +73,47 @@
     spins_span.innerHTML = spins;
     </script>
 </body>
+
 <footer>
     <script>
         document.write("Your one stop shop for used phones - "+store_name+"'s");
     </script>
 </footer>
+
+<tbody>
+    <script> 
+        let first_name = "Rikki"; 
+        let last_name = "Rutt"; 
+        let initials = `${first_name[0]}.${last_name[0]}.`;
+    </script>
+
+    <table>
+        <tr><th colspan="2"><h1>Your One Stop For Used Phones - <initials>R.R's </h1></th></tr>
+    <tr>
+        <td>1.</td>
+        <td>
+            <br>Copyright @ <first_name>Rikki</first_name> <last_name>Rutt</last_name></td>
+    </tr>
+    <tr><br>
+        <td>2.</td><br>
+        <td>
+            <script>
+                let now = new Date (9/24/23)
+            </script>
+            9/24/23
+        </td>
+    </tr>
+    <tr><br>
+        <td>3.</td><br>
+        <td>
+            <script>
+                let hours = (now.getHours() + 11) % 12 + 1;
+                let minutes = now.getMinutes();
+                let ampm = (hours < 12) ? 'AM' : 'PM';
+            </script>
+            10:30 P.M
+        </td>
+    </tr>
+    </table>
+</tbody>
 </html>
