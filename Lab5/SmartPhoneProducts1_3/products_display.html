@@ -8,6 +8,7 @@
     <p style="text-align: center; font-weight: bold;">
         Hits:<span id="hits_span">0</span>
         Spins:<span id="spins_span">0</span>
+        Hit/Spin:<span id="hit_spin_span">0</span>
         </p>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +28,8 @@
         </h1>
 
     <div><main>
-        <section class="item" onmouseover="this.className='item rotate'; spins=spins+1; spins_span.innerHTML = spins; 
-        " onclick="this.className='item'; hits=hits+1; hits_span.innerHTML = hits;">
+        <section class="item" onmouseover="this.className='item rotate'; spins=spins+1; spins_span.innerHTML = spins;
+        hit_spin_span.innerHTML=(hits_span.innerHTML/spins_span.innerHTML);" onclick="this.className='item'; hits=hits+1; hits_span.innerHTML = hits; hit_spin_span.innerHTML=(hits_span.innerHTML/spins_span.innerHTML);">
         <h2>HTC</h2>
         <p>&dollar;40.00</p>
         <img src= "http://dport96.github.io/ITM352/morea/080.flow-control-II/HTC.jpg">
