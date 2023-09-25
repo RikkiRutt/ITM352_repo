@@ -16,16 +16,37 @@
     <input id="speedSlider" type="range" min=".1" max="5" step=".1" 
             onchange="localStyle.innerHTML = '.rotate img {animation-duration: ' + speedSlider.value + 's;}';" style="direction: rtl;">
     <style id="localStyle"></style>
-</head>
-<body onload="hits_span.innerHTML = hits; spins_span.innerHTML = spins;">
+    <body onload="hits_span.innerHTML = hits; spins_span.innerHTML = spins;">
 
 
-    <h1>
-        <script>
-            document.write(store_name + "'s Used Smart Phone Store");
-        </script> 
-
+        <h1>
+            <head>
+                <style>
+                    h1 {
+                        font-size: 50px;
+                    }
+                </style>
+            </head>
+            <body>
+            
+            <script>
+                let first_name = "Rikki";
+                let last_name = "Rutt's";
+            
+                let name_expression = "<b>" + first_name + "</b> <i>" + last_name + "</i>";
+            
+                document.write("<h1>" + name_expression + "</h1>");
+            </script>
+          
+    
         </h1>
+        <h2>
+            <script>
+                document.write( "Used Smart Phone Store");
+            </script>
+        </h2>
+</head>
+
 
     <div><main>
         <section class="item" onmouseover="this.className='item rotate'; spins=spins+1; spins_span.innerHTML = spins;
@@ -82,8 +103,6 @@
 
 <footer>
     <script>
-let first_name = "Rikki";
-let last_name = "Rutt";
 let initials = `${first_name[0]}.${last_name[0]}.`;
 
 let line = 1;
