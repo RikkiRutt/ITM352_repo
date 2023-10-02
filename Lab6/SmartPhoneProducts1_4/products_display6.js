@@ -5,15 +5,15 @@ bottom_title.innerHTML=(store_name + "'s Used Smart Phone Store");
 
 let hits= 0;
 let spins=0;
-//let wins;
+let wins;
 let over_half=false;
 hits_span.innerHTML = hits; 
 spins_span.innerHTML = spins;
 
 function changeClassName(element) {
     if(element.className=='item'){
-        spins=spins+1;
         element.className = 'item rotate';
+        spins=spins+1;
 
     }
   
@@ -30,7 +30,7 @@ function changeClassName(element) {
     hit_spin_span.innerHTML=Number(hits/spins).toFixed(2)
     // -- Winning progress depends on hits/spins
     let hits_spins_ratio = hits/spins;
-    let progtess;
+    let progress;
     if ( hits_spin_ratio > 0) {
         progress = 'On your way!';
         if ( hits_spins_ratio >= 0.25 ) {
@@ -67,7 +67,7 @@ function resetClassName(element) {
     hit_spin_span.innerHTML=Number(hits/spins).toFixed(2)
       // -- Winning progress depends on hits/spins
       let hits_spins_ratio = hits/spins;
-      let progtess;
+      let progress;
       if ( hits_spin_ratio > 0) {
           progress = 'On your way!';
           if ( hits_spins_ratio >= 0.25 ) {
