@@ -65,4 +65,22 @@ function resetClassName(element) {
     win_span.innerHTML = over_half;
     hits_span.innerHTML = hits; 
     hit_spin_span.innerHTML=Number(hits/spins).toFixed(2)
+      // -- Winning progress depends on hits/spins
+      let hits_spins_ratio = hits/spins;
+      let progtess;
+      if ( hits_spin_ratio > 0) {
+          progress = 'On your way!';
+          if ( hits_spins_ratio >= 0.25 ) {
+              progress = 'Almost there!';
+              if ( hits_spins_ratio >= .05) {
+                  if( hits < spins) {
+                  progress = 'You win!';
+              }
+          }
+      }
+  }
+  else {
+      progress = ' Get going!' ;
+      } 
+      win_span.innerHTML=progress;
 }
