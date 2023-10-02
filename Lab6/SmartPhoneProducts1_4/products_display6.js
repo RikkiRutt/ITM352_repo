@@ -18,6 +18,7 @@ function changeClassName(element) {
     } else {
         wins=false;
     }
+    win_span.innerHTML = wins;
     spins_span.innerHTML = spins; 
     hit_spin_span.innerHTML=Number(hits/spins).toFixed(2)
 }
@@ -29,6 +30,7 @@ function resetClassName(element) {
     } else {
         wins=false;
     }
+    win_span.innerHTML = wins;
     hits_span.innerHTML = hits; 
     hit_spin_span.innerHTML=Number(hits/spins).toFixed(2)
 }
