@@ -80,7 +80,7 @@ function resetClassName(element) {
       }
   }
   else {
-      progress = 'Get going!' ;
+      progress = ' Get going!' ;
       } 
       win_span.innerHTML=progress;
 }
