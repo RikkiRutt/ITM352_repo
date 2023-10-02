@@ -9,7 +9,7 @@ document.querySelector('button').addEventListener('click', function () {
     //note that the code for this program only executes when the button is clicked
 
     //define and assign a new month input variable as lowercase of input to make the switch statement easier to deal with
-    let month=monthInput.toLowerCase();
+    let month=monthInput.value.toLowerCase();
     
     // Initialize num_days to -1 (default value) because ...
     let num_days = -1;
@@ -47,8 +47,8 @@ document.querySelector('button').addEventListener('click', function () {
     //if num_days is -1, output an error message to the DOM, otherwise send the proper result from the switch statement
 
     if (num_days === -1) {
-        resultElement.textContent = 'Invalid month. Please enter a valid month name.';
+        result.textContent = 'Invalid month. Please enter a valid month name.';
     } else {
-        resultElement.textContent = `There are ${num_days} days in ${month}.`;
+        result.textContent = `There are ${num_days} days in ${month}.`;
     }
 });
