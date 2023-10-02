@@ -33,6 +33,8 @@ function resetClassName(element) {
     if(element.className=='item rotate'){
         hits=hits+2;
         element.className = 'item';
+    } else {
+        changeClassName(element);
     }
  
     if(spins<2*hits&&hits<spins){
