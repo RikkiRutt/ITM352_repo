@@ -13,7 +13,7 @@ function changeClassName(element) {
   
     element.className = 'item rotate';
     spins=spins+1; 
-    if(spins<2*hits){
+    if(spins<2*hits&&hits<spins){
         wins=true;
     } else {
         wins=false;
@@ -25,7 +25,7 @@ function changeClassName(element) {
 function resetClassName(element) {
     element.className = 'item';
     hits=hits+=2;
-    if(spins<2*hits){
+    if(spins<2*hits&&hits<spins){
         wins=true;
     } else {
         wins=false;
