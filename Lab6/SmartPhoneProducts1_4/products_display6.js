@@ -11,9 +11,13 @@ hits_span.innerHTML = hits;
 spins_span.innerHTML = spins;
 
 function changeClassName(element) {
+    if(element.className=='item'){
+        spins=spins+1;
+        element.className = 'item rotate';
+
+    }
   
-    element.className = 'item rotate';
-    spins=spins+1; 
+    //spins=spins+1; 
     if(spins<2*hits&&hits<spins){
         //wins=true
         over_half=true;
@@ -23,7 +27,7 @@ function changeClassName(element) {
     //win_span.innerHTML = wins;
     win_span.innerHTML = over_half;
     spins_span.innerHTML = spins; 
-    hit_spin_span.innerHTML=Number(hits/spins).toFixed(2)
+    hit_spin_span.innerHTML=(hits/spins).toFixed(2)
 }
 function resetClassName(element) {
     element.className = 'item';
