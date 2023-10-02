@@ -30,8 +30,11 @@ function changeClassName(element) {
     hit_spin_span.innerHTML=(hits/spins).toFixed(2)
 }
 function resetClassName(element) {
-    element.className = 'item';
-    hits=hits+=2;
+    if(element.className=='item rotate'){
+        hits=hits+2;
+        element.className = 'item';
+    }
+ 
     if(spins<2*hits&&hits<spins){
         //wins=true
         over_half=true;
