@@ -31,7 +31,7 @@ function changeClassName(element) {
     // -- Winning progress depends on hits/spins
     let hits_spins_ratio = hits/spins;
     let progress;
-    if ( hits_spin_ratio > 0) {
+    if ( hits_spins_ratio > 0) {
         progress = 'On your way!';
         if ( hits_spins_ratio >= 0.25 ) {
             progress = 'Almost there!';
@@ -68,7 +68,7 @@ function resetClassName(element) {
       // -- Winning progress depends on hits/spins
       let hits_spins_ratio = hits/spins;
       let progress;
-      if ( hits_spin_ratio > 0) {
+      if ( hits_spins_ratio > 0) {
           progress = 'On your way!';
           if ( hits_spins_ratio >= 0.25 ) {
               progress = 'Almost there!';
