@@ -49,8 +49,8 @@ else {
 }
 function resetClassName(element) {
     if(element.className=='item rotate'){
-        hits=hits+2;
         element.className = 'item';
+        hits=hits+2;
     } else {
         changeClassName(element);
     }
@@ -80,7 +80,7 @@ function resetClassName(element) {
       }
   }
   else {
-      progress = ' Get going!' ;
+      progress = 'Get going!' ;
       } 
       win_span.innerHTML=progress;
 }
