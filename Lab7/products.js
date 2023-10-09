@@ -129,7 +129,7 @@ document.write('<table border="1"');
 document.write('<tr><th>Number</th><th>Item</th></tr>');
 //loop to output rows
 for (let i=1; eval("typeof name"+i)!='undefined'; i++) {
-    document.write('<tr><td>${i}</td><td>${eval("name"+i)}</td></tr>');
+    document.write(`<tr><td>${i}</td><td>${eval("name"+i)}</td></tr>`);
 }
 
 // close the table
