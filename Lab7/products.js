@@ -54,11 +54,11 @@ console.log();
 console.log("exercise 2.1");
 productCount=1
 while (productCount <=num_products){
-    console.log(productCount);
     if (productCount > num_products/2){
         console.log("That's enough");
         break;
     }
+    console.log(productCount);
     productCount++;
 }
 
