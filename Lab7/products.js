@@ -85,7 +85,7 @@ productCount=1;
 while (productCount <= num_products) {
     if (productCount >= num_products/2){
         console.log("Don't ask for anyhting else");
-        process.exit();
+        //process.exit();
     }
     if (productCount >= lowerBound && productCount<= upperBound) {
         console.log (eval('name'+productCount) + ' is sold out!!');
@@ -94,3 +94,23 @@ while (productCount <= num_products) {
     }
     productCount++;
 }
+
+//3.1a
+
+
+
+
+console.log();
+console.log("exercise 3.1a");
+productCount=1;
+for (let i=1; i<= num_products; i++) {
+    if (pi >= lowerBound && i<= upperBound) {
+        console.log (eval('name'+i) + ' is sold out!!');
+    } else {
+    console.log(i+'. '+eval('name'+i));
+    }
+}
+
+//3.1b
+console.log();
+console.log("exercise 3.1b");
