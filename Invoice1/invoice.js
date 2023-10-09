@@ -45,15 +45,15 @@ let shippingCharge = 0
 if (subtotal <= 50)
 {
     shippingCharge = 2
-}
+} //lest then$50 is $2
 else if (subtotal <= 100) 
 {
     shippingCharge = 5
-}
+} //$50 to $99.99 is $5
 else
 {
     shippingCharge= subtotal * 0.05 //5% of subtotal
-}
+} //more then $100 is 5% of subtotal
 //calculate total
 let total = subtotal + taxAmount +shippingCharge;
 
