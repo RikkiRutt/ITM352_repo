@@ -83,6 +83,10 @@ console.log();
 console.log("exercise 2.3");
 productCount=1;
 while (productCount <= num_products) {
+    if (productCount >= num_products/2){
+        console.log("Don't ask for anyhting else");
+        process.exit();
+    }
     if (productCount >= lowerBound && productCount<= upperBound) {
         console.log (eval('name'+productCount) + ' is sold out!!');
     } else {
