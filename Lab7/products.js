@@ -34,7 +34,7 @@ while (productCount <=num_products){
 //exercise 1.2
 console.log();
 console.log("exercise 1.2");
-productCount=1
+productCount=1;
 while (productCount <= num_products) {
     console.log(productCount+'. '+eval('name'+productCount));
     productCount++;
@@ -43,7 +43,7 @@ while (productCount <= num_products) {
 //exercise 1.3
 console.log();
 console.log("exercise 1.3");
-productCount=1
+productCount=1;
 while (productCount <= num_products/2) {
     console.log(productCount+'. '+eval('name'+productCount));
     productCount++;
@@ -53,7 +53,7 @@ while (productCount <= num_products/2) {
 //exercise 2.1
 console.log();
 console.log("exercise 2.1");
-productCount=1
+productCount=1;
 while (productCount <=num_products){
     if (productCount > num_products/2){
         console.log("That's enough");
