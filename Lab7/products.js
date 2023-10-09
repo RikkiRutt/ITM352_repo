@@ -72,7 +72,8 @@ let upperBound =num_products*.75;
 while (productCount <= num_products) {
     if (productCount >= lowerBound && productCount<= upperBound) {
         console.log (eval('name'+productCount) + ' is sold out!!');
-    }
+    } else {
     console.log(productCount+'. '+eval('name'+productCount));
+    }
     productCount++;
 }
