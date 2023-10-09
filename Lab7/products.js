@@ -104,7 +104,7 @@ console.log();
 console.log("exercise 3.1a");
 productCount=1;
 for (let i=1; i<= num_products; i++) {
-    if (pi >= lowerBound && i<= upperBound) {
+    if (i >= lowerBound && i<= upperBound) {
         console.log (eval('name'+i) + ' is sold out!!');
     } else {
     console.log(i+'. '+eval('name'+i));
