@@ -111,6 +111,15 @@ for (let i=1; i<= num_products; i++) {
     }
 }
 
+
 //3.1b
 console.log();
 console.log("exercise 3.1b");
+for (let i=1; eval("typeof name"+i)!='undefined'; i++) {
+    if (i >= lowerBound && i<= upperBound) {
+        console.log (eval('name'+i) + 'is sold out!!');
+    } else {
+    console.log(i+'.'+eval('name'+i));
+    }
+}
+//4.2
