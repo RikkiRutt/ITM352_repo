@@ -55,7 +55,7 @@ else
     shippingCharge= subtotal * 0.05 //5% of subtotal
 } //more then $100 is 5% of subtotal
 //calculate total
-let total = subtotal + taxAmount +shippingCharge;
+let total = subtotal + taxAmount + shippingCharge;
 
 //populate the table rows using dom manipulation
 let table = document.getElementById('invoiceTable');
