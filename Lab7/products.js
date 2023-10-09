@@ -77,3 +77,16 @@ while (productCount <= num_products) {
     }
     productCount++;
 }
+
+//exercise 2.3
+console.log();
+console.log("exercise 2.3");
+productCount=1;
+while (productCount <= num_products) {
+    if (productCount >= lowerBound && productCount<= upperBound) {
+        console.log (eval('name'+productCount) + ' is sold out!!');
+    } else {
+    console.log(productCount+'. '+eval('name'+productCount));
+    }
+    productCount++;
+}
