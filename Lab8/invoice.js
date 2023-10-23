@@ -1,37 +1,35 @@
-//product data and calculating extended price
-/* This is poke 6.1 invoice1 */
 
-// Product Data
-
-//Product 1
 let item1 = 'Hat';
 let quantity1 = 1;
 let price1 = 25.26;
 let extended_price1 = quantity1 * price1;
 
-//Product 2
 let item2 = 'Shirt';
 let quantity2 = 4;
 let price2 = 35.75;
 let extended_price2 = quantity2 * price2;
 
-//Product 3
 let item3 = 'Pants';
 let quantity3 = 2;
 let price3 = 40.45;
 let extended_price3 = quantity3 * price3;
 
-//Product 4
 let item4 = 'Shoes';
 let quantity4 = 1;
 let price4 = 75.56;
 let extended_price4 = quantity4 * price4;
 
-//Product 5
 let item5 = 'Socks';
 let quantity5 = 4;
 let price5 = 10.21;
 let extended_price5 = quantity5 * price5;
+
+//lab 8 part 1.1
+let product1 = {
+    itemName: 'iPhone12',
+    quantitu: 4,
+    price: 247.95
+};
 
 //calculate subtotal
 let subtotal = extended_price1 + extended_price2 + extended_price3 + extended_price4 + extended_price5;
