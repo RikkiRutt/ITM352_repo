@@ -31,6 +31,9 @@ let product1 = {
     price: 247.95
 };
 
+//lab 8 1.4
+product1 ["SKU#"]=1234;
+
 //lab 8 part 1.3
 product1.quantity = 0;
 //lab8 part 1.2
