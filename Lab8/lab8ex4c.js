@@ -24,13 +24,15 @@ for (let i=0; i < product_quantities.length; i++) {
     let product = products[i];
     let extended_cost = quantity * product.price;
 
-    document.write("<tr>");
-    document.write("<td>" + (i + 1) + "</td>"); // product #
-    document.write("<td>" + product.name + "</td>"); //name
-    document.write("<td>" + product.price.toFixed(2) + "</td>"); // price
-    document.write("<td>" + quantity + "</td>"); //quantity
-    document.write("<td>" + extended_cost.toFixed(2) + "</td>"); //extended cost
-    document.write("</tr>");
+    //create new row for each product and add effect
+    let newRow = document.createElement('tr');
+    newRow.innerHTML = `
+        <td>${i + 1}</td>
+        <td>${product.name}</td>
+        <td>${product.price.toFixed(2)}</td>
+        <td>${quantity}</td>
+        <td>${extended_cost.toFixed(2)}</td>
+        `;
 }
 document.write("</table>");
 
