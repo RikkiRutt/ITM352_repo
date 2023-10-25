@@ -34,9 +34,9 @@ for (let i=0; i < product_quantities.length; i++) {
 }
 document.write("</table>");
 
-/*N
-
-
+/*lab 8 4.1 add row if the table is clicked
+no addition data only row with appropriate number of cells
+cell data not needed
 
 */
 
@@ -44,5 +44,18 @@ function addNewRow () {
     let table = document.querySelector('table');
 
     let newRow = table.insertRow();
-    
-}
+    newRow.innerHTML = `
+        <td> blank </td>
+        <td> blank </td>
+        <td> blank </td>
+        <td> blank </td>
+        <td> blank </td>
+    `;
+};
+
+//add click event listener to the table to trigger the addNewRow function
+document.addEventListener('DOMContentLoaded', function () {
+    let table = document.querySelector('table');
+    table.addEventListener('click', addNewRow);
+});
+
