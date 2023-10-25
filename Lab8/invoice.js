@@ -1,7 +1,7 @@
 
-let item1 = 'Hat';
-let quantity1 = 1;
-let price1 = 25.26;
+//let item1 = 'Hat';
+//let quantity1 = 1;
+//let price1 = 25.26;
 //let extended_price1 = quantity1 * price1;
 
 let item2 = 'Shirt';
@@ -51,7 +51,7 @@ let row = invoiceTable.insertRow(); //create new row for each item
 row.insertCell(0).innerHTML = `${product1.itemName}`; 
 row.insertCell(1).innerHTML = `${product1.quantity}`;
 row.insertCell(2).innerHTML = `$` + `${product1.price}`;
-row.insertCell(3).innerHTML = (`$` + `${extended_price1}`);
+row.insertCell(3).innerHTML = (`$` + `${extended_price1.toFixed(2)}`);
 row = invoiceTable.insertRow(); //create new row for each item
 row.insertCell(0).innerHTML = `${item2}`; 
 row.insertCell(1).innerHTML = `${quantity2}`;
