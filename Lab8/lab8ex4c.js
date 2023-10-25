@@ -82,6 +82,12 @@ function addNewRow () {
     newRow.addEventListener('mouseout', function() {
         newRow.style.backgroundColor = '';
     });
+
+    newRow.addEventListener('click', function() {
+        table.deleteRow(newRod.rowIndex);
+    }
+    
+    )
 };
 
 //add click event listener to the table to trigger the addNewRow function
@@ -91,7 +97,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-function deleteLastRow() {
+function deleteClickedRow() {
     let table = document.querySelector('table');
     let rowCount = table.rows.length; //row count for table
 
