@@ -4,27 +4,27 @@ let product_quantities=[2,1,1,1,1];
 
 
 let item1 = 'Hat';
-let quantity1 = 1;
+let quantity1 = product_quantities[0];
 let price1 = 25.26;
 //let extended_price1 = quantity1 * price1;
 
 let item2 = 'Shirt';
-let quantity2 = 4;
+let quantity2 = product_quantities[1];
 let price2 = 35.75;
 let extended_price2 = quantity2 * price2;
 
 let item3 = 'Pants';
-let quantity3 = 2;
+let quantity3 = product_quantities[2];
 let price3 = 40.45;
 let extended_price3 = quantity3 * price3;
 
 let item4 = 'Shoes';
-let quantity4 = 1;
+let quantity4 = product_quantities[3];
 let price4 = 75.56;
 let extended_price4 = quantity4 * price4;
 
 let item5 = 'Socks';
-let quantity5 = 4;
+let quantity5 = product_quantities[4];
 let price5 = 10.21;
 let extended_price5 = quantity5 * price5;
 
