@@ -27,7 +27,7 @@ let extended_price5 = quantity5 * price5;
 //lab 8 part 1.1
 let product1 = {
     itemName: 'iPhone12',
-    quantity: 4,
+    quantity: 3,
     price: 247.95
 };
 
