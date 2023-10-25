@@ -31,6 +31,8 @@ let product1 = {
     price: 247.95
 };
 
+//lab 8 part 1.3
+product1.quantity = 0;
 //lab8 part 1.2
 let extended_price1 = product1.quantity * product1.price;
 
