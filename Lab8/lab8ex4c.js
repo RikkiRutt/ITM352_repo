@@ -92,7 +92,7 @@ function addNewRow () {
     });
 };
 
-
+/*
 
 function deleteClickedRow() {
     let table = document.querySelector('table');
@@ -101,4 +101,4 @@ function deleteClickedRow() {
     if (rowCount >1) {
         table.deleteRow(rowCount-1); //delete last row
     };
-};
+}; */
