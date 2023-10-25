@@ -26,7 +26,10 @@ for (let i=0; i < product_quantities.length; i++) {
 
     document.write("<tr>");
     document.write("<td>" + (i + 1) + "</td>"); // product #
-    document.write("<td>" + product_quantities[i] + "</td>"); // quantity
+    document.write("<td>" + product.name + "</td>"); //name
+    document.write("<td>" + product.price.toFixed(2) + "</td>"); // price
+    document.write("<td>" + quantity + "</td>"); //quantity
+    document.write("<td>" + extended_cost.toFixed(2) + "</td>"); //extended cost
     document.write("</tr>");
 }
 document.write("</table>");
