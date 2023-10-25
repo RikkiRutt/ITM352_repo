@@ -43,6 +43,10 @@ for (let i=0; i < product_quantities.length; i++) {
     newRow.addEventListener('mouseout', function() {
         newRow.style.backgroundColor = '';
     });
+
+    newRow.addEventListener('click', function() {
+        table.deleteRow(newRod.rowIndex);
+    });
 }
 
 
