@@ -33,9 +33,10 @@ for (let i=0; i < product_quantities.length; i++) {
         <td>${quantity}</td>
         <td>${extended_cost.toFixed(2)}</td>
         `;
-}
     //append new row to table
     document.querySelector('table').appendChild(newRow);
+
+}
 
 //lab 8 4.2 create button to delete last fow 
 //Create a new HTML button element and assing it to the deleteButton variable
