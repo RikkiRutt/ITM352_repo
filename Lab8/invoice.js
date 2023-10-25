@@ -31,7 +31,7 @@ let extended_price5 = quantity5 * price5;
 //lab 8 part 1.1
 let product1 = {
     itemName: 'iPhone12',
-    quantity: 3,
+    quantity: product_quantities[0],
     price: 247.95
 };
 
@@ -40,7 +40,7 @@ product1 ["SKU#"]=1234;
 delete product1["SKU#"];
 
 //lab 8 part 1.3
-product1.quantity = 0;
+//product1.quantity = 0;
 //lab8 part 1.2
 let extended_price1 = product1.quantity * product1.price;
 
