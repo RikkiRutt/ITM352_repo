@@ -14,7 +14,9 @@ let products = [
 
 // iterate through product_quantities and print each element in a table
 document.write("<table>");
-document.write("<tr><tr>Product #</th><th>Quantity</th></th>");
+//document.write("<tr><tr>Product #</th><th>Quantity</th></th>");
+//lab 8 part 3.2
+document.write("<tr><tr>Product #</th><th>Name</th><th>Price</th><th>Quantity</th><th>Extended Cost</th></th>");
 
 for (let i=0; i < product_quantities.length; i++) {
     document.write("<tr>");
