@@ -1,7 +1,11 @@
 
-//let item1 = 'Hat';
-//let quantity1 = 1;
-//let price1 = 25.26;
+//lab 8 part 2.1
+let product_quantities=[2,1,1,1,1];
+
+
+let item1 = 'Hat';
+let quantity1 = 1;
+let price1 = 25.26;
 //let extended_price1 = quantity1 * price1;
 
 let item2 = 'Shirt';
@@ -33,6 +37,7 @@ let product1 = {
 
 //lab 8 1.4
 product1 ["SKU#"]=1234;
+delete product1["SKU#"];
 
 //lab 8 part 1.3
 product1.quantity = 0;
