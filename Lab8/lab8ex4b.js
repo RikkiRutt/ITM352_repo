@@ -34,6 +34,19 @@ for (let i=0; i < product_quantities.length; i++) {
 }
 document.write("</table>");
 
+//lab 8 4.2 create button to delete last fow 
+//Create a new HTML button element and assing it to the deleteButton variable
+let deleteButton = document.createElement('button');
+
+deleteButton.textContent = 'Delete Last Row';
+
+deleteButton.addEventListener('click', deleteLastRow);
+
+document.body.appendChild(deleteButton);
+
+
+
+
 /*lab 8 4.1 add row if the table is clicked
 no addition data only row with appropriate number of cells
 cell data not needed
@@ -59,3 +72,12 @@ document.addEventListener('DOMContentLoaded', function () {
     table.addEventListener('click', addNewRow);
 });
 
+
+function deleteLastRow() {
+    let table = document.querySelector('table');
+    let rowCount = table.rows.length; //row count for table
+
+    if (rowCount >1) {
+        table.deleteRow(rowCount-1); //delete last row
+    }
+}
