@@ -36,7 +36,7 @@ for (let i=0; i < product_quantities.length; i++) {
     //append new row to table
     document.querySelector('table').appendChild(newRow);
 
-    newRow.addEventListener('mouseover' , function () {
+    newRow.addEventListener('mouseover', function () {
         newRow.style.backgroundColor = 'yellow';
     });
 
@@ -45,7 +45,7 @@ for (let i=0; i < product_quantities.length; i++) {
     });
 
     newRow.addEventListener('click', function() {
-        table.deleteRow(newRod.rowIndex);
+        document.querySelector('table').deleteRow(newRod.rowIndex);
     });
 }
 
@@ -91,6 +91,7 @@ function addNewRow () {
         table.deleteRow(newRod.rowIndex);
     });
 };
+
 
 
 function deleteClickedRow() {
