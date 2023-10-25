@@ -22,6 +22,7 @@ for (let i=0; i < product_quantities.length; i++) {
 
     let quantity = product_quantities[i];
     let product = products[i];
+    let extended_cost = quantity * product.price;
 
     document.write("<tr>");
     document.write("<td>" + (i + 1) + "</td>"); // product #
