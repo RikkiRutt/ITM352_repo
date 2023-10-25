@@ -1,5 +1,5 @@
 //define the product_quantities array
-let product_quantities = [2,1,1,1,1];
+let product_quantities = [2,1,3,1,1];
 
 // array of all products
 // corresponds to product_quantities array
