@@ -90,12 +90,6 @@ function addNewRow () {
     )
 };
 
-//add click event listener to the table to trigger the addNewRow function
-document.addEventListener('DOMContentLoaded', function () {
-    let table = document.querySelector('table');
-    table.addEventListener('click', addNewRow);
-});
-
 
 function deleteClickedRow() {
     let table = document.querySelector('table');
