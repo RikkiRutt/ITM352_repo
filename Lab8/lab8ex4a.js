@@ -34,3 +34,15 @@ for (let i=0; i < product_quantities.length; i++) {
 }
 document.write("</table>");
 
+/*N
+
+
+
+*/
+
+function addNewRow () {
+    let table = document.querySelector('table');
+
+    let newRow = table.insertRow();
+    
+}
