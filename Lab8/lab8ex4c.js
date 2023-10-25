@@ -36,7 +36,17 @@ for (let i=0; i < product_quantities.length; i++) {
     //append new row to table
     document.querySelector('table').appendChild(newRow);
 
+    newRow.addEventListener('mouseover' , function () {
+        newRow.style.backgroundColor = 'yellow';
+    });
+
+    newRow.addEventListener('mouseout', function() {
+        newRow.style.backgroundColor = '';
+    }
+    
+    )
 }
+
 
 //lab 8 4.2 create button to delete last fow 
 //Create a new HTML button element and assing it to the deleteButton variable
