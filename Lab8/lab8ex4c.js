@@ -42,21 +42,18 @@ for (let i=0; i < product_quantities.length; i++) {
 
     newRow.addEventListener('mouseout', function() {
         newRow.style.backgroundColor = '';
-    }
-    
-    )
+    });
 }
 
 
-//lab 8 4.2 create button to delete last fow 
-//Create a new HTML button element and assing it to the deleteButton variable
-let deleteButton = document.createElement('button');
 
-deleteButton.textContent = 'Delete Last Row';
+let addButton = document.createElement('button');
 
-deleteButton.addEventListener('click', deleteLastRow);
+addButton.textContent = 'Add New Row';
 
-document.body.appendChild(deleteButton);
+addButton.addEventListener('click', addNewRow);
+
+document.body.appendChild(addButton);
 
 
 
@@ -78,6 +75,13 @@ function addNewRow () {
         <td> blank </td>
         <td> blank </td>
     `;
+    newRow.addEventListener('mouseover' , function () {
+        newRow.style.backgroundColor = 'yellow';
+    });
+
+    newRow.addEventListener('mouseout', function() {
+        newRow.style.backgroundColor = '';
+    });
 };
 
 //add click event listener to the table to trigger the addNewRow function
