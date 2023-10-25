@@ -45,7 +45,7 @@ for (let i=0; i < product_quantities.length; i++) {
     });
 
     newRow.addEventListener('click', function() {
-        document.querySelector('table').deleteRow(newRod.rowIndex);
+        document.querySelector('table').deleteRow(newRow.rowIndex);
     });
 }
 
