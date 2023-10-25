@@ -49,7 +49,7 @@ let table = document.getElementById('invoiceTable');
 
 let row = invoiceTable.insertRow(); //create new row for each item
 row.insertCell(0).innerHTML = `${product1.itemName}`; 
-row.insertCell(1).innerHTML = `${qproduct1.quantity}`;
+row.insertCell(1).innerHTML = `${product1.quantity}`;
 row.insertCell(2).innerHTML = `$` + `${product1.price}`;
 row.insertCell(3).innerHTML = (`$` + `${extended_price1}`);
 row = invoiceTable.insertRow(); //create new row for each item
