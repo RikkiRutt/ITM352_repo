@@ -64,6 +64,7 @@ let total = subtotal + taxAmount;
 let table = document.getElementById('invoiceTable');
 
 let row = invoiceTable.insertRow(); //create new row for each item
+//lab 8 part 1.2 changed item 1 to product1.item
 row.insertCell(0).innerHTML = `${product1.itemName}`; 
 row.insertCell(1).innerHTML = `${product1.quantity}`;
 row.insertCell(2).innerHTML = `$` + `${product1.price}`;
