@@ -88,7 +88,7 @@ function addNewRow () {
     });
 
     newRow.addEventListener('click', function() {
-        table.deleteRow(newRod.rowIndex);
+        table.deleteRow(newRow.rowIndex);
     });
 };
 
