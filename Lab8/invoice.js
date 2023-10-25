@@ -2,7 +2,13 @@
 //lab 8 part 2.1
 let product_quantities=[2,1,1,1,1];
 
+//lab 8 part 2.3
+product_quantities.push(3);
+//alert("The size of the products array is: "+product_quantities.length);
+product_quantities.pop();
 
+//lab 8 part 2.2
+//alert("The size of the products array is: "+product_quantities.length);
 let item1 = 'Hat';
 let quantity1 = product_quantities[0];
 let price1 = 25.26;
