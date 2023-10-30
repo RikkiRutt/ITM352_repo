@@ -5,7 +5,7 @@
     <title>Order Page</title>
 </head>
 <body>
-    <form name="qty_form" action="" method="GET" >
+    <form name="qty_form" action="" method="GET" onsubmit="return formSubmission()">
         <label for="qty_textbox">Quantity Desired</label>
         <input type="text" name="qty_textbox">
         <span id="qty_textbox_message">Enter a quantity</span>
@@ -14,8 +14,8 @@
         <input type="submit" value="Purchase">
     </form>
 
-    <div id="result"></div>
-    
+    <div id="invalidQuantity"></div>
+
     <script src="order4.js"></script>
 </body>
 </html>
