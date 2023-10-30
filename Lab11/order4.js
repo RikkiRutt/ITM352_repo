@@ -1,5 +1,19 @@
 
 
+function formSubmission(){
+
+    let quantity = Number(document.querySelector('input[name="qty_textbox"]').value);
+
+let validationMessage = validateQuantity(quantity);
+
+if (validationMessage!=="") {
+    document.getElementById("invalidQuantity").innerHTML = validationMessage
+}
+
+
+}
+
+
 function validateQuantity(quantity) {
     let errorMessage = "";
 
