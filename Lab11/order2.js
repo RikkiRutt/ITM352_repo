@@ -35,3 +35,9 @@ function validateQuantity(quantity) {
 
     return errorMessage;
 }
+
+function displayPurchase() {
+    let quantity = Number(document.getElementById('qty_textbox_message').value);
+
+    let validationMessage = 
+}
