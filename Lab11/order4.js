@@ -8,6 +8,7 @@ let validationMessage = validateQuantity(quantity);
 
 if (validationMessage!=="") {
     document.getElementById("invalidQuantity").innerHTML = validationMessage
+    window.stop();
 } else {
 
     window.location.href = `display_purchase.html?qty_textbox=${quantity}`;
