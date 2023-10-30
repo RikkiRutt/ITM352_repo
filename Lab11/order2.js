@@ -40,4 +40,9 @@ function displayPurchase() {
     let quantity = Number(document.getElementById('qty_textbox_message').value);
 
     let validationMessage = validateQuantity(quantity);
+
+    if (validationMessage == "") {
+        let message = "Thank you for ordering ${quantity} things!";
+        document.body.innerHTML = message;
+    }
 }
