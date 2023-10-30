@@ -42,7 +42,7 @@ function displayPurchase() {
     let validationMessage = validateQuantity(quantity);
 
     if (validationMessage == "") {
-        let message = "Thank you for ordering ${quantity} things!";
+        let message = `Thank you for ordering ${quantity} things!`;
         document.body.innerHTML = message;
     }
 }
