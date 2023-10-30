@@ -11,6 +11,7 @@ if (validationMessage!=="") {
 } else {
 
     window.location.href = `display_purchase.html?qty_textbox=${quantity}`;
+    return false;
 }
 
 
