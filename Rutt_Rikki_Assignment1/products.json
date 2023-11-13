@@ -10,7 +10,7 @@
 		"price": 999.99,
 		"image": "SamsungZFlip",
 		"qty_available": 3
-	}
+	},
     {
 		"model": "Apple iPhone 15 Pro Max",
 		"price": 1199.00,
@@ -22,7 +22,7 @@
 		"price": 999.99,
 		"image": "SamsungZFlip",
 		"qty_available": 3
-	}
+	},
     {
 		"model": "Apple iPhone 15 Pro Max",
 		"price": 1199.00,
