@@ -34,5 +34,4 @@ let product = [{
 		"image": "Strut.jpg",
 		"qty_available": 5,
 		"qty_sold": 0
-	}
-]
+	}];
