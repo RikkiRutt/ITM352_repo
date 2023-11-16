@@ -1,22 +1,3 @@
-// Define an array of products
-let products = [
-    {
-        name: "Oil Filter",
-        price: "$7.99",
-        image: "Images/Oil filter.jpg"
-    },
-    {
-        name: "Upper Ball Joints",
-        price: "$85.55",
-        image: "Images/Ball Joint.jpg"
-    },
-    {
-        name: "Front Brake Rotors",
-        price: "$98.00",
-        image: "Images/Brake Rotor.jpg"
-    }
-    // Add more products as needed
-];
 
 // Function to generate the HTML for a product card
 function generateCard(product) {
