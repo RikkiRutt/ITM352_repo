@@ -33,6 +33,9 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/login", function (request, response) {
     // Give a simple login form
+    let user_return = request.query.username || "";
+    let errorMessage = request.query.error || "";
+
     let login_form = `
 <body>
     <div id="errMsg"></div>
@@ -41,6 +44,13 @@ app.get("/login", function (request, response) {
 <input type="password" name="password" size="40" placeholder="enter password"><br />
 <input type="submit" value="Submit" id="submit">
 </form>
+<script>
+document.getElementById("username").value = "${user_return}":
+let errMsg = "${errorMessage};
+if (errMsg !== ") {
+    document.getElementById("errMsg").innerHTML = errMsg;
+}
+</script>
 </body>
     `;
     response.send(login_form);
