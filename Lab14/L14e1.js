@@ -35,6 +35,7 @@ app.get("/login", function (request, response) {
     // Give a simple login form
     let login_form = `
 <body>
+    <div id="errMsg"></div>
 <form action="/login" method="POST">
 <input type="text" name="username" size="40" placeholder="enter username" ><br />
 <input type="password" name="password" size="40" placeholder="enter password"><br />
