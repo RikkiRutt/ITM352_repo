@@ -40,12 +40,12 @@ app.get("/login", function (request, response) {
 <body>
     <div id="errMsg"></div>
 <form action="/login" method="POST">
-<input type="text" name="username" size="40" placeholder="enter username" ><br />
+<input type="text" name="username" id="username" size="40" placeholder="enter username" ><br />
 <input type="password" name="password" size="40" placeholder="enter password"><br />
 <input type="submit" value="Submit" id="submit">
 </form>
 <script>
-document.getElementById("username").value = "${user_return}":
+document.getElementById("username").value = "${user_return}";
 let errMsg = "${errorMessage};
 if (errMsg !== ") {
     document.getElementById("errMsg").innerHTML = errMsg;
