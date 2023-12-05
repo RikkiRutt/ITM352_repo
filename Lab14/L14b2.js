@@ -8,7 +8,11 @@ if(fs.existsSync(filename)){
 
     let user_reg_data = JSON.parse(data);
 
-    console.log(user_reg_data);
+    let user_stats = fs.statSync (filename);
+
+    let stats_size = user_stats.size;
+
+    console.log(`The file name ${filename} has ${stats_size} characters.`);
 } else {
     console.log(`The file name ${filename} foes not exist.`);
 }
