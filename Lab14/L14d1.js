@@ -18,6 +18,15 @@ if(fs.existsSync(filename)){
     console.log(`The file name ${filename} foes not exist.`);
 }
 
+//p4 lab 12
+let username = 'newuser';
+users_reg_data[username] = {};
+users_reg_data[username].password = 'newpass';
+users_reg_data[username].email = 'newuser@user.com';
+
+fs.writeFileSync(filename, JSON.stringify(user_reg_data), 'utf-8');
+
+
 let express = require('express');
 let app = express();
 
