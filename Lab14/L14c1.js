@@ -2,11 +2,12 @@ const fs = require ('fs');
 
 let filename =__dirname+'/user_data.json';
 
+let user_reg_data;
 
 if(fs.existsSync(filename)){
     let data = fs.readFileSync(filename, 'utf-8');
 
-    let user_reg_data = JSON.parse(data);
+    user_reg_data = JSON.parse(data);
 
     let user_stats = fs.statSync (filename);
 
