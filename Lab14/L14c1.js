@@ -39,7 +39,33 @@ app.get("/login", function (request, response) {
 app.post("/login", function (request, response) {
     // Process login form POST and redirect to logged in page if ok, back to login page if not
 
+// Process loging form POST & redir to loffed in page if good, back to login page if not
+//Get uses enterd info
+let username_entered = request.body['username'];
+let password_entered = request.body ['password'];
 
+let response_msg = "";
+let errors = false;
+
+//Check username exist in user reg data
+if (typeof user_reg_data[username_entered] != 'undefined') {
+    //Check passwored matches username
+    if (password_entered == user_reg_data[username_entered].password) {
+        response_msg = `${username_entered} is logged in.`;
+    } else {
+        response_msg = `Incorrect password.`;
+        errors = true;
+    }
+    } else {
+        response_msg = `${username_entered} does not exist.`;
+        errors = true;
+    }
+
+    if (!errors) {
+        response.send(response_msg);
+    } else {
+        response.redirect(`./login?error=${response_msg}`)
+    }
 
 });
 
