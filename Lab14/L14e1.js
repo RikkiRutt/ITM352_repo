@@ -33,16 +33,16 @@ app.use(express.urlencoded({ extended: true }));
 
 app.get("/login", function (request, response) {
     // Give a simple login form
-    str = `
+    let login_form = `
 <body>
-<form action="" method="POST">
+<form action="/login" method="POST">
 <input type="text" name="username" size="40" placeholder="enter username" ><br />
 <input type="password" name="password" size="40" placeholder="enter password"><br />
 <input type="submit" value="Submit" id="submit">
 </form>
 </body>
     `;
-    response.send(str);
+    response.send(login_form);
  });
 
 app.post("/login", function (request, response) {
@@ -73,7 +73,7 @@ if (typeof user_reg_data[username_entered] != 'undefined') {
     if (!errors) {
         response.send(response_msg);
     } else {
-        response.redirect(`./login?error=${response_msg}`)
+        response.redirect(`./login?error=${response_msg}&username=${username_entered}`);
     }
 
 });
