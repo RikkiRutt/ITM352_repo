@@ -26,7 +26,6 @@ user_reg_data[username].email = 'newuser@user.com';
 
 fs.writeFileSync(filename, JSON.stringify(user_reg_data), 'utf-8');
 
-
 let express = require('express');
 let app = express();
 
@@ -99,5 +98,14 @@ app.get("/register", function (request, response) {
 
  app.post("/register", function (request, response) {
     // process a simple register form
+    let new_user = request.body.username;
 
+        user_reg_data[new_user] = {};
+        user_reg_data[new_user].name = request.body.name;
+        user_reg_data[new_user].password = request.body.password;
+        user_reg_data[new_user].email = request.body.email;
+
+        fs.writeFileSync(filename, JSON.stringify(user_reg_data), 'utf-8');
+        response.redirect(`./login`);
+        
  });
