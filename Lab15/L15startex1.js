@@ -11,7 +11,7 @@ app.get ('/set_cookie', (req,res) =>{
     res.send('A Cookie with your name has been set');
 });
 
-app.get ('/use_cookie', (req, res) {
+app.get ('/use_cookie', (req, res) => {
     let username = req.cookies.username;
     res.send(`Welcome to the Use Cookie Page, ${username}`);
 });
