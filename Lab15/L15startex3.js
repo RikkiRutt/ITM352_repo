@@ -26,19 +26,35 @@ app.get('/use_session', (req, res) => {
 
 app.get("/login", function (request, response) {
     // Give a simple login form
-    str = `
+
+    const login_form = `
         <script>
+            function getCookieValue(cookieName) {
+                let cookies = document.cookie.split(';'); //Split the entire cookie string by ';'
+                for (let i = 0; i < cookies.length; i++) {
+                    let cookiePair = cookies[i].trim().split ('='); //split each individual cookie into key and value
+                    if (cookiePair[0] === cookieName) {
+                        return cookiePair[1]; // Return the value if the name matches
+                    }
+                }
+                return null; // Return null if the cookie is not found
+            }
             let params = (new URL(document.location)).searchParams;
             window.onload = function() {
                 if (params.has('error')) {
                     login_form['username'].value = params.get('username');
                     document.getElementById("errMsg").innerHTML = params.get("error");
                 }
+                let cookie_username=getCookieValue ('username');
+                if (cookie_username) {
+                    document.getElementById ("welcomeUser").innerHTML = 'Welcome back '+cookie_username+'!';
+                }
             }
         </script>
 
         <body>
         <div id="errMsg"></div>
+        <div id='welcomeUser"></div>
         <form action="" method="POST" name="login_form">
         <input type="text" name="username" size="40" placeholder="enter username" ><br />
         <input type="password" name="password" size="40" placeholder="enter password"><br />
@@ -46,7 +62,7 @@ app.get("/login", function (request, response) {
         </form>
         </body>
     `;
-    response.send(str);
+    response.send(login_form);
 });
 
 app.post("/login", function (request, response) {
@@ -64,6 +80,10 @@ app.post("/login", function (request, response) {
     if (typeof user_reg_data[username_entered] != 'undefined') {
         // Check if the password matches with the username
         if (password_entered == user_reg_data[username_entered].password) {
+
+
+            response.cookie('username',`${username_entered}`);
+            console.log('Login cookie has been sent.');
 
             const userSession = request.session;
             if(!userSession.lastLogin) {
