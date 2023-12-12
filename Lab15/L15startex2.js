@@ -6,6 +6,10 @@ app.use(express.urlencoded({ extended: true }));
 const cookieParser = require('cookie-parser');
 app.use(cookieParser());
 
+const session = require('express-session');
+
+app.use(session({secret: "MySecretKey", resave: true, saveUninitialized: true}));
+
 app.get ('/set_cookie', (req,res) =>{
     res.cookie('username', 'Rik', {maxAge: 5000});
     res.send('A Cookie with your name has been set');
@@ -16,7 +20,9 @@ app.get ('/use_cookie', (req, res) => {
     res.send(`Welcome to the Use Cookie Page, ${username}`);
 });
 
-
+app.get('/use_session', (req, res) => {
+    res.send(`Welcome, your session iD is ${req.session.id}.`);
+});
 
 
 
