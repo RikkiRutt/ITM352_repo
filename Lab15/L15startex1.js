@@ -3,6 +3,36 @@ const app = express();
 
 app.use(express.urlencoded({ extended: true }));
 
+const cookieParser = require('cookie-parser');
+app.use(cookieParser());
+
+app.get ('/set_cookie', (req,res) =>{
+    res.cookie('username', 'Rik');
+    res.send('A Cookie with your name has been set');
+});
+
+app.get ('/use_cookie', (req, res) {
+    let username = req.cookies.username;
+    res.send(`Welcome to the Use Cookie Page, ${username}`);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
